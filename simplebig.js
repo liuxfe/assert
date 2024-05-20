@@ -4,7 +4,7 @@ var sc = "万与丑专业丛东丝丢两严丧个丬丰临为丽举么义乌乐�
 
 var SimpleBig = {};
 
-SimpleBig.s2t = function(str) {
+export function s2t(str) {
   var ret = "", i, len, idx;
   str = str || this;
   for(i=0,len=str.length; i<len; i++) {
@@ -14,7 +14,7 @@ SimpleBig.s2t = function(str) {
   return ret;
 }
 
-SimpleBig.t2s = function(str) {
+export function t2s(str) {
   var ret = "", i, len, idx;
   str = str || this;
   for(i=0,len=str.length; i<len; i++) {
@@ -32,4 +32,4 @@ SimpleBig.attach = function() {
   });
 }
 
-module.exports = SimpleBig;
+//module.exports = SimpleBig;
